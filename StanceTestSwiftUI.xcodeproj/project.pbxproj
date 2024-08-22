@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		02BB7B852C77A16900511090 /* StanceTestSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7B842C77A16900511090 /* StanceTestSwiftUIApp.swift */; };
-		02BB7B872C77A16900511090 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7B862C77A16900511090 /* ContentView.swift */; };
+		02BB7B872C77A16900511090 /* RepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7B862C77A16900511090 /* RepsView.swift */; };
 		02BB7B892C77A16A00511090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BB7B882C77A16A00511090 /* Assets.xcassets */; };
 		02BB7B8C2C77A16A00511090 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BB7B8B2C77A16A00511090 /* Preview Assets.xcassets */; };
 		02BB7B962C77A16A00511090 /* StanceTestSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7B952C77A16A00511090 /* StanceTestSwiftUITests.swift */; };
 		02BB7BA02C77A16A00511090 /* StanceTestSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7B9F2C77A16A00511090 /* StanceTestSwiftUIUITests.swift */; };
 		02BB7BA22C77A16A00511090 /* StanceTestSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BA12C77A16A00511090 /* StanceTestSwiftUIUITestsLaunchTests.swift */; };
+		02BB7BAF2C77A41E00511090 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BAE2C77A41E00511090 /* Network.swift */; };
+		02BB7BB12C77A6E000511090 /* GymData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BB02C77A6E000511090 /* GymData.swift */; };
+		02BB7BB32C77AB3200511090 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BB22C77AB3200511090 /* NetworkService.swift */; };
+		02BB7BB52C77AD6E00511090 /* RepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BB42C77AD6E00511090 /* RepsViewModel.swift */; };
+		02BB7BB72C77B6A400511090 /* GymDataForTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BB62C77B6A400511090 /* GymDataForTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		02BB7B812C77A16900511090 /* StanceTestSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanceTestSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BB7B842C77A16900511090 /* StanceTestSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanceTestSwiftUIApp.swift; sourceTree = "<group>"; };
-		02BB7B862C77A16900511090 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02BB7B862C77A16900511090 /* RepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepsView.swift; sourceTree = "<group>"; };
 		02BB7B882C77A16A00511090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02BB7B8B2C77A16A00511090 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02BB7B912C77A16A00511090 /* StanceTestSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StanceTestSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		02BB7B9B2C77A16A00511090 /* StanceTestSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StanceTestSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BB7B9F2C77A16A00511090 /* StanceTestSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanceTestSwiftUIUITests.swift; sourceTree = "<group>"; };
 		02BB7BA12C77A16A00511090 /* StanceTestSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanceTestSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02BB7BAE2C77A41E00511090 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		02BB7BB02C77A6E000511090 /* GymData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymData.swift; sourceTree = "<group>"; };
+		02BB7BB22C77AB3200511090 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		02BB7BB42C77AD6E00511090 /* RepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepsViewModel.swift; sourceTree = "<group>"; };
+		02BB7BB62C77B6A400511090 /* GymDataForTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDataForTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +105,14 @@
 			isa = PBXGroup;
 			children = (
 				02BB7B842C77A16900511090 /* StanceTestSwiftUIApp.swift */,
-				02BB7B862C77A16900511090 /* ContentView.swift */,
+				02BB7BB42C77AD6E00511090 /* RepsViewModel.swift */,
+				02BB7B862C77A16900511090 /* RepsView.swift */,
 				02BB7B882C77A16A00511090 /* Assets.xcassets */,
 				02BB7B8A2C77A16A00511090 /* Preview Content */,
+				02BB7BAE2C77A41E00511090 /* Network.swift */,
+				02BB7BB02C77A6E000511090 /* GymData.swift */,
+				02BB7BB22C77AB3200511090 /* NetworkService.swift */,
+				02BB7BB62C77B6A400511090 /* GymDataForTest.swift */,
 			);
 			path = StanceTestSwiftUI;
 			sourceTree = "<group>";
@@ -257,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02BB7B872C77A16900511090 /* ContentView.swift in Sources */,
+				02BB7BB32C77AB3200511090 /* NetworkService.swift in Sources */,
+				02BB7BB72C77B6A400511090 /* GymDataForTest.swift in Sources */,
+				02BB7B872C77A16900511090 /* RepsView.swift in Sources */,
 				02BB7B852C77A16900511090 /* StanceTestSwiftUIApp.swift in Sources */,
+				02BB7BAF2C77A41E00511090 /* Network.swift in Sources */,
+				02BB7BB52C77AD6E00511090 /* RepsViewModel.swift in Sources */,
+				02BB7BB12C77A6E000511090 /* GymData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
