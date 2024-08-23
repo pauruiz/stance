@@ -11,7 +11,7 @@ import Combine
 class RepsViewModel: ObservableObject {
     private var cancellables = Array<AnyCancellable>()
     let networkService:NetworkServiceProtocol
-    @Published var data: [GymData] = []
+    @Published var data: GymData = GymData(sets: [])
     
     init(networkService: NetworkServiceProtocol) {
         self.networkService = networkService
@@ -20,12 +20,8 @@ class RepsViewModel: ObservableObject {
     func fetchData() {
         self.networkService.getData()
             .receive(on: RunLoop.main)
-            .sink(receiveCompletion: {data in }, receiveValue: { [weak self] data in
+            .sink(receiveCompletion: { data in }, receiveValue: { [weak self] data in
                 self?.data = data
             }).store(in: &cancellables)
-    }
-    func fetchDataNoNetwork() {
-        let dataForTestProvider = GymDataForTest()
-        self.data = dataForTestProvider.getData()
     }
 }

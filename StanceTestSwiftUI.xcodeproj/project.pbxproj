@@ -18,7 +18,6 @@
 		02BB7BB12C77A6E000511090 /* GymData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BB02C77A6E000511090 /* GymData.swift */; };
 		02BB7BB32C77AB3200511090 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BB22C77AB3200511090 /* NetworkService.swift */; };
 		02BB7BB52C77AD6E00511090 /* RepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BB42C77AD6E00511090 /* RepsViewModel.swift */; };
-		02BB7BB72C77B6A400511090 /* GymDataForTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB7BB62C77B6A400511090 /* GymDataForTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,8 @@
 		02BB7BB02C77A6E000511090 /* GymData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymData.swift; sourceTree = "<group>"; };
 		02BB7BB22C77AB3200511090 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		02BB7BB42C77AD6E00511090 /* RepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepsViewModel.swift; sourceTree = "<group>"; };
-		02BB7BB62C77B6A400511090 /* GymDataForTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDataForTest.swift; sourceTree = "<group>"; };
+		02BB7BB82C77CB6900511090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		02BB7BB92C77CBE500511090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = StanceTestSwiftUI/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				02BB7B832C77A16900511090 /* StanceTestSwiftUI */,
+				02BB7BB92C77CBE500511090 /* Info.plist */,
 				02BB7B942C77A16A00511090 /* StanceTestSwiftUITests */,
 				02BB7B9E2C77A16A00511090 /* StanceTestSwiftUIUITests */,
 				02BB7B822C77A16900511090 /* Products */,
@@ -104,6 +105,7 @@
 		02BB7B832C77A16900511090 /* StanceTestSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				02BB7BB82C77CB6900511090 /* Info.plist */,
 				02BB7B842C77A16900511090 /* StanceTestSwiftUIApp.swift */,
 				02BB7BB42C77AD6E00511090 /* RepsViewModel.swift */,
 				02BB7B862C77A16900511090 /* RepsView.swift */,
@@ -112,7 +114,6 @@
 				02BB7BAE2C77A41E00511090 /* Network.swift */,
 				02BB7BB02C77A6E000511090 /* GymData.swift */,
 				02BB7BB22C77AB3200511090 /* NetworkService.swift */,
-				02BB7BB62C77B6A400511090 /* GymDataForTest.swift */,
 			);
 			path = StanceTestSwiftUI;
 			sourceTree = "<group>";
@@ -273,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				02BB7BB32C77AB3200511090 /* NetworkService.swift in Sources */,
-				02BB7BB72C77B6A400511090 /* GymDataForTest.swift in Sources */,
 				02BB7B872C77A16900511090 /* RepsView.swift in Sources */,
 				02BB7B852C77A16900511090 /* StanceTestSwiftUIApp.swift in Sources */,
 				02BB7BAF2C77A41E00511090 /* Network.swift in Sources */,
@@ -444,6 +444,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StanceTestSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StanceTestSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,6 +473,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StanceTestSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StanceTestSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -9,44 +9,24 @@ import SwiftUI
 import Charts
 import Combine
 
-
-struct data {
-    let date: Date
-    let speed: Float
-}
-
 struct RepsView: View {
     @StateObject var repsViewModel = RepsViewModel(networkService: NetworkService())
     var body: some View {
         VStack {
-            Text(repsViewModel.data.first?.sets.first?.reps.first?.speed.description ?? "DEFAULT")
-            
-//            Chart {
-//                ForEach(respViewModel.data.sets, id: \.id) { item in
-//                                    LineMark(
-//                                        x: .value(, item.date),
-//                                        y: .value("Count", item.value)
-//                                    )
-//                                }
-//            }
-            
-//            Chart{
-//                LineMark(
-//                    x: .value("Month", Date(timeIntervalSince1970: TimeInterval(1))),
-//                    y: .value("speed", 0.33)
-//                )
-////                BarMark(
-////                    x: .value("", 0.33),
-////                    y: .value("", 0.33)
-////                )
-//            }
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Repetitions")
+            ForEach(repsViewModel.data.sets, id: \.self) { set in
+                Chart (0..<set.reps.count, id: \.self){ index in
+                    LineMark(x: .value( "Date", set.reps[index].timestamp
+                                        ),
+                             y: .value("Intensity", set.reps[index].intensity)
+                    )
+                }
+            }
+            Image(ImageResource(name: "stancelogo_black", bundle: Bundle.main)).foregroundStyle(.tint)
+            Text("Lift Stronger,\nLift Smarter.")
         }
         .onAppear() {
-            repsViewModel.fetchDataNoNetwork()
+            repsViewModel.fetchData()
         }
         .padding()
     }

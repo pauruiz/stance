@@ -22,13 +22,13 @@ enum NetworkEndpoints: APIEndpoint {
     case getData
     
     var baseURL: URL {
-        return URL(string: "https://run.mocky.io/")!
+        return URL(string: "http://pau.iosnow.net/")!
     }
     
     var path: String {
         switch self {
         case .getData:
-            return "/v3/541fe76b-7ff1-48cf-90a3-bb145a300d6d"
+            return "/stance.json"
         }
     }
 
@@ -45,13 +45,14 @@ class URLSessionAPIClient<EndpointType: APIEndpoint>: APIClient {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss +0000"
+        decoder.dateDecodingStrategy = .formatted(dateFormatter)
         
         return URLSession.shared.dataTaskPublisher(for: request)
             .subscribe(on: DispatchQueue.global(qos: .background))
             .tryMap { data, response -> Data in
-                guard let httpResponse = response as? HTTPURLResponse,
-                      (200...299).contains(httpResponse.statusCode) else {
+                guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
                     throw APIError.invalidResponse
                 }
                 return data
