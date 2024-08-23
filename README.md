@@ -15,3 +15,10 @@ I tried to have separated the View, the ViewModel, and the Netowrk layer, althou
 
 ## Total time spent
 Almost the two hours
+
+=======
+Hope you won't mind, sorted the networking watching the F1 box for this weekend race, fixed the graph and added some Stance icons, images and text this morning, before getting out of bed.
+
+App is working, missing tests, and would refactor some classes that are still scattered, but at least I believe is a fully working "as per specs"
+
+* Nice vector logos, by the way...
